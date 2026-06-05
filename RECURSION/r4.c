@@ -1,7 +1,18 @@
 //find factorial of number
-#include<stdio.h>
-int fact(int n);
- int main(){
-    printf("factorial is:%d",fact(6));
+int main() {
+    int num = 6;
+
+    printf("Factorial of %d is: %d\n", num, fact(num));
+
     return 0;
- }
+}
+
+int fact(int n) {
+    int i, factorial = 1;
+
+    for(i = 1; i <= n; i++) {
+        factorial = factorial * i;
+    }
+
+    return factorial;
+}
